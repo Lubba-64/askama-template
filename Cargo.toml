@@ -1,0 +1,17 @@
+[package]
+name = "askama-template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = "0.12.1"
+axum = {version="0.7.5", features = ["macros"]}
+axum-server = { version = "0.7.1", features = ["tls-rustls", "tokio-rustls"] }
+axum-server-dual-protocol = "0.7.0"
+tracing = "0.1"
+tokio = { version = "1.39.2", features = ["full"] }
+tower-http = { version = "0.5.2", features = ["fs"] }
+tower-sessions = "0.12.2"
+serde = { version = "1.0.188", features = ["derive"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+dotenv = "0.15.0"
